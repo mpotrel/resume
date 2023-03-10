@@ -1,7 +1,7 @@
 import streamlit as st
-from resume.tabs.education_tab import display_education
-from resume.tabs.experience_tab import display_experience
-from resume.tabs.skills_tab import display_skills
+from resume.tabs.resume.education_tab import display_education
+from resume.tabs.resume.experience_tab import display_experience
+from resume.tabs.resume.skills_tab import display_skills
 
 
 def display_main_page():

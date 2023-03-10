@@ -5,6 +5,7 @@ def display_education():
     st.subheader("Education")
     main_col, various_col = st.columns(2)
     main_md = """
+        #### Academical
         - Data Scientist
             - __2021__: _DataScientest_, _Sorbonne University_ co-certification
         - Agrégation de mathématiques
@@ -17,6 +18,7 @@ def display_education():
             - __2015__: _Lorraine University_
     """
     various_md = """
+        #### Online certifications
         - _Udemy_, _Coursera_, _Udacity_, _FreeCodeCamp_
             - Python
             - Machine Learning and Deep Learning

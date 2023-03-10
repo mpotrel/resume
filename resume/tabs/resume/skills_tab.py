@@ -2,8 +2,11 @@ import streamlit as st
 
 
 def display_skills():
+    st.subheader("Skills")
+
     python_col, others_col = st.columns(2)
     python_markdown = """
+        #### Python
         - Python libraries for ML
             - Scikit-Learn
             - TensorFlow
@@ -23,6 +26,7 @@ def display_skills():
             - SciPy
     """
     others_markdown = """
+        #### General
         - Mathematics
             - Linear algebra
             - Statistics

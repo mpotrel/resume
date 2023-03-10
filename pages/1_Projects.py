@@ -1,23 +1,20 @@
 import streamlit as st
+from resume.tabs.projects.resume import display_resume
+from resume.tabs.projects.fastapi import display_fastapi
+from resume.tabs.projects.rakuten import display_rakuten
+from resume.tabs.projects.radiocovid import display_radiocovid
+
 
 st.header("Projects")
-rakuten, radiocovid, fastapi = st.tabs(["Rakuten", "Radio Covid", "FastAPI"])
+resume, rakuten, radiocovid, fastapi = st.tabs(
+    ["Resume", "Rakuten", "Radio Covid", "FastAPI"]
+)
 
-rakuten_markdown = """
-    Currently in progress
-"""
-
-radiocovid_markdown = """
-    Under refactoring
-"""
-
-fastapi_markdown = """
-    Currently in progress
-"""
-
-for page, markdown in (
-    (rakuten, rakuten_markdown),
-    (radiocovid, radiocovid_markdown),
-    (fastapi, fastapi_markdown),
+for tab, display in (
+    (resume, display_resume),
+    (rakuten, display_rakuten),
+    (radiocovid, display_radiocovid),
+    (fastapi, display_fastapi),
 ):
-    page.markdown(markdown)
+    with tab:
+        display()
