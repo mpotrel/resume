@@ -14,20 +14,12 @@
     ]
     
     let skills = [
-        // {name: 'Python', icon: 'fa-brands fa-python'},
-        // {name: 'Rust', icon: 'fa-brands fa-rust'},
-        // {name: 'Go', icon: 'fa-brands fa-golang'},
-        // {name: 'Haskell', icon: 'fa-regular fa-file-code'},
-        // {name: 'Javascript', icon: 'fa-brands fa-js'},
-        // {name: 'C/C++', icon: 'fa-solid fa-c'},
         {name: 'Programming Languages', icon: 'fa-regular fa-file-code'},
         {name: 'ML', icon: 'fa-solid fa-brain'},
         {name: 'Code Health', icon: 'fa-solid fa-book'},
         {name: 'Workflow', icon: 'fa-solid fa-gears'},
         {name: 'Web development technologies', icon: 'fa-solid fa-server'},
         {name: 'Languages', icon: 'fa-solid fa-language'},
-        // {name: 'Systems Programming', icon: 'fa-solid fa-terminal'},
-        // {name: 'Cloud', icon: 'fa-solid fa-cloud-arrow-down'},
     ]
 
     let hobbies = [
@@ -109,7 +101,7 @@
                 </p>
                 <ul>
                     <li>I have helped develop and design an LLM repository for entity extractions in pharmaceutical studies</li>
-                    <li>I have built components of the ML stack, reviewed critical packages and played a major role in the key refactoring of the main ML package</li>
+                    <li>I have built components of the ML stack, reviewed critical packages and I have been involved in refactoring several key parts of the main ML packages</li>
                     <li>I have run experiments to improve the performance of our NLP models</li>
                     <li>I have monitored, debugged and maintained our ML services on the hospital prod servers</li>
                 </ul>
@@ -131,6 +123,7 @@
                     <li><strong>(2019 - 2021) CYU university</strong></li>
                 </ul>
                 <p>
+                    I have given math lessons in university and engineering school, and I have been a match teacher in high school for over four years, where I had to learn how to communicate with a sometimes difficult audience of heterogenous levels (believe it or not, teaching those sometimes difficult teenagers has actually been one of the most enjoyable time of my career).
                     I have also given some basic high school computer science courses during my time as a teacher.
                 </p>
             </Step>
@@ -149,9 +142,9 @@
             <Step step={skills[0]}>
                 <ul>
                     <li><strong>Proficient</strong>: Python</li>
-                    <li><strong>Correct</strong>: Rust</li>
-                    <li><strong>WIP</strong>: Javascript, C/C++</li>
-                    <li><strong>Coming soon</strong>: Golang, Haskell, Lua</li>
+                    <li><strong>Decent</strong>: Rust</li>
+                    <li><strong>WIP</strong>: Javascript, Typescript, C</li>
+                    <li><strong>Coming soon</strong>: C++, Golang, Haskell, Lua</li>
                 </ul>
             </Step>
             <Step step={skills[1]}>
@@ -213,12 +206,6 @@
                 <p>
                     This website was created using <span class="ubuntu text-blue-600"></span>Svelte with <span class="ubuntu text-blue-600">Tailwind CSS</span>. I wanted to learn about some web technologies, being already somewhat familiar with <span class="ubuntu text-blue-600">HTML</span>, <span class="ubuntu text-blue-600">CSS</span> and <span class="ubuntu text-blue-600">JavaScript</span>, so I thought "why not use one of the current cool kids' framwork?".
                 </p>
-                <!-- <p>The resources I used to learn about those technologies are </p>
-                    <ol>
-                        <li><a href="https://frontendmasters.com/courses/sveltekit/">FrontEnd Masters's Svelte Course</a> by Rich Harris himself!</li>
-                        <li>The amazing <a href="https://learn.svelte.dev/tutorial/welcome-to-svelte">Svelte tutorial</a></li>
-                        <li>FreeCodeCamp's <a href="https://www.youtube.com/watch?v=-2UjwQzxvBQ">Svelte and Tailwind CSS course</a> by SmolJames, which deserves a special mention because I used this course for the website's skeleton</li>
-                    </ol> -->
             </Step>
             <Step step={projects[1]}>
                 <p>

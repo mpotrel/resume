@@ -1,10 +1,17 @@
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/kit/vite';
-/** @type {import ('sveltejs/kit').Config} */
+import adapter from '@sveltejs/adapter-static';
+import preprocess from 'svelte-preprocess';
+
 const config = {
-	kit: {
-		adapter: adapter()
-	},
-	preprocess: vitePreprocess()
+  kit: {
+    adapter: adapter({
+      pages: 'docs',
+      assets: 'docs',
+    }),
+		paths: {
+			base: '/resume'
+		}
+  },
+  preprocess: preprocess()
 };
+
 export default config;
